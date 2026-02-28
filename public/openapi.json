@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Docs Portal API",
+    "version": "1.0.0",
+    "description": "Sample API documentation for Docs Portal"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/api/hello": {
+      "get": {
+        "summary": "Get Hello Message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "example": {
+                  "message": "Hello World"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
